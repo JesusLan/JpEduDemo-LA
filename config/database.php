@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => getenv('IS_IN_KEROKU') ? 'pgsql' : env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -58,7 +58,7 @@ return [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', $url["host"]),
             'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', ltrim($url["path"],'/')),
+            'database' => env('DB_DATABASE', substr($url["path"], 1)),
             'username' => env('DB_USERNAME', $url["user"]),
             'password' => env('DB_PASSWORD', $url["pass"]),
             'charset' => 'utf8',
