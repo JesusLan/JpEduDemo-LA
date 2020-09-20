@@ -37,15 +37,15 @@ return [
 
     // line 社会化登录
     'line' => [
-        'client_id' => env('LINE_KEY'),
-        'client_secret' => env('LINE_SECRET'),
-        'redirect' => env('LINE_REDIRECT_URI'),
+        'client_id' => '1654948440',
+        'client_secret' => '97598cee2c20442a095e00af12bf05d6',
+        'redirect' => 'https://secret-oasis-69470.herokuapp.com/',
         // 登陆成功后回调前端地址
-        'login_callback_uri' => env("LINE_LOGIN_CALLBACK_URI", "http://localhost:8080/"),
+        'login_callback_uri' => "https://secret-oasis-69470.herokuapp.com/",
         // 学生绑定之后回调前端地址
-        'student_bind_callback_uri' => env("LINE_STUDENT_BIND_CALLBACK_URI", "http://localhost:8080/personal-center/student"),
+        'student_bind_callback_uri' => "https://secret-oasis-69470.herokuapp.com/personal-center/student",
         // 老师绑定之后回调前端地址
-        'teacher_bind_callback_uri' => env("LINE_STUDENT_BIND_CALLBACK_URI", "http://localhost:8080/personal-center/teacher"),
+        'teacher_bind_callback_uri' => "https://secret-oasis-69470.herokuapp.com/personal-center/teacher",
     ],
 
 ];

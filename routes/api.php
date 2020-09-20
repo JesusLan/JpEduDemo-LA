@@ -37,3 +37,6 @@ Route::namespace('Home')->group(function () {
         Route::patch("teacher-bind-line", "TeacherController@bindLine");
     });
 });
+
+Route::post('push','PusherController@publicPush'); //公共频道
+Route::post('privatePush','PusherController@privatePush'); //私有频道
