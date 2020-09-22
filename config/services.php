@@ -39,7 +39,7 @@ return [
     'line' => [
         'client_id' => '1654948440',
         'client_secret' => '97598cee2c20442a095e00af12bf05d6',
-        'redirect' => 'https://secret-oasis-69470.herokuapp.com/auth/login/',
+        'redirect' => 'https://jpedu-lw-demo.herokuapp.com/line-redirect-to-provider/',
         // 登陆成功后回调前端地址
         'login_callback_uri' => "https://secret-oasis-69470.herokuapp.com/",
         // 学生绑定之后回调前端地址
