@@ -17,5 +17,4 @@ Route::namespace('Home')->group(function () {
     Route::get("line-callback-teachers", "LineController@teacherLoginCallback");
     Route::get("line-callback-teacher-bind", "LineController@teacherBindCallback");
     Route::get("line-callback-student-bind", "LineController@studentBindCallback");
-    Route::get("line-login-callback", "LineController@handleProviderCallback");
 });
