@@ -20,7 +20,7 @@ class LineController extends Controller
         $config = new Config(
             config("services.line.client_id"),
             config("services.line.client_secret"),
-            config("services.line.redirect") . $authProvider
+            config("services.line.redirect") . "-" . $authProvider
         );
 
         return Socialite::driver("line")->setConfig($config)->redirect();
@@ -96,7 +96,7 @@ class LineController extends Controller
         $config = new Config(
             config("services.line.client_id"),
             config("services.line.client_secret"),
-            config("services.line.redirect") . $provider
+            config("services.line.redirect") . "-" . $provider
         );
 
         $user = Socialite::driver("line")->setConfig($config)->user();
