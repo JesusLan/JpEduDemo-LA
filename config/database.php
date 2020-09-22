@@ -112,7 +112,7 @@ return [
         'default' => [
             'host' => 'ec2-3-217-82-56.compute-1.amazonaws.com',
             'password' => 'p9306b015e65e2f4d8559888044511443a9e4833152c0c3907f0e8b4b72814985',
-            'port' => env('REDIS_PORT', 15009),
+            'port' => '15009',
             'database' => 0,
         ],
 
