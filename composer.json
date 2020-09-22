@@ -49,7 +49,7 @@
             "php artisan optimize",
             "chmod -R 777 storage",
             "php artisan passport:keys --force",
-            "php artisan queue:work",
+            "php artisan queue:work"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
