@@ -17,7 +17,7 @@ class PusherController extends Controller {
     {
         $input = Input::all();
 //        return $input['message'];
-        broadcast(new PublicMessageEvent($input['message']));
+        event(new PublicMessageEvent($input['message']));
     }
 
 
