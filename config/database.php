@@ -111,9 +111,9 @@ return [
         'client' => 'predis',
 
         'default' => [
-            'host' => $redis_url.hostname,
-            'password' => $redis_url.password,
-            'port' => $redis_url.port,
+            'host' => env('REDIS_HOST', $redis_url["hostname"]),
+            'password' => env('REDIS_PASSWORD',$redis_url["password"]),
+            'port' => env('REDIS_PORT', $redis_url["port"]),
             'database' => 0,
         ],
 
