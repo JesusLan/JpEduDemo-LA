@@ -1,5 +1,6 @@
 <?php
 $url = parse_url(getenv("DATABASE_URL"));
+$redis_url = parse_url(getenv('REDIS_URL'));
 return [
 
     /*
@@ -110,9 +111,9 @@ return [
         'client' => 'predis',
 
         'default' => [
-            'host' => 'ec2-3-217-82-56.compute-1.amazonaws.com',
-            'password' => 'p9306b015e65e2f4d8559888044511443a9e4833152c0c3907f0e8b4b72814985',
-            'port' => '15009',
+            'host' => $redis_url.hostname,
+            'password' => $redis_url.password,
+            'port' => $redis_url.port,
             'database' => 0,
         ],
 
