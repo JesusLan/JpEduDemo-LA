@@ -1,6 +1,5 @@
 <?php
 $url = parse_url(getenv("DATABASE_URL"));
-$redis_url = parseDsn(getenv('REDIS_URL'));
 return [
 
     /*
