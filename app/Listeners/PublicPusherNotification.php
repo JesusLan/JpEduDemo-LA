@@ -11,7 +11,7 @@ class PublicPusherNotification implements ShouldQueue
 {
     use InteractsWithQueue;
 
-    public $connection = 'redis';
+    public $connection = 'sync';
 
     public $queue = 'default';
 
